@@ -1,0 +1,125 @@
+:root {
+    /* Gray color palette */
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+
+    /* Slate color palette */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+html {
+    background-color: white;
+    padding: 14px;
+   
+}
+body {
+    border-radius: 8px;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--slate-50);
+    padding: 0 1.4rem;
+   
+}
+img {
+    max-width:  100%;
+}
+main {
+    width: 94%;
+    margin: 1rem auto;
+}
+a {
+    color: blue;
+}
+a:hover {
+    color: rgb(0, 0, 170)
+}
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+.bold {
+    font-weight: 800;
+}
+.introduction {
+    text-align: center;
+    padding: 1.8rem 0;
+}
+.introduction h1 {
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.5rem;
+}
+#description {
+    letter-spacing: 0.8px;
+    color: var(--slate-700)
+}
+.img-div {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.2rem;
+    
+}
+.img-container {
+    width: 80%;
+    margin: auto;
+}
+.img-div img {
+    margin: auto;
+    border-radius: 6px;
+    height: auto;
+}
+.img-div figcaption {
+    font-size: 0.8rem;
+    color: var(--gray-800);
+    text-align: center;
+    margin-top: 0.4rem;
+}
+
+
+ul{
+   width: 60%;
+   margin: 1rem auto;
+}
+ul > li {
+    margin-bottom: 1rem;
+}
+
+.quote {
+    width: 60%;
+    margin: 1.5rem auto;
+    font-style: italic;
+    margin-bottom: 1.2rem;
+    
+}
+.quote figcaption {
+    margin-top:  0.8rem;
+    font-weight: 700;
+}
+.tribute-link {
+    margin-bottom: 2rem;
+}
