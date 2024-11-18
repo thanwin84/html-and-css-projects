@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Than Win Hline</title>
+    <link rel="stylesheet" href="styles.css" >
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                <span class="">
+                    Than Win Hline
+                </span>
+                <span class="title">
+                     FULLSTACK DEVELOPER
+                </span>
+            </h1>
+            <ul class="roboto-regular box-shadow mbl-nav">
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#educations">EDUCATION</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <div class="col-1">
+                <h2>
+                    <span class="">Hi, I am</span>
+                    <span class="myname gradient-text">Than Win Hline</span>
+                </h2>
+                <p class="intro-tagline">
+                    <span>Full Stack Developer |</span>
+                    <span>JavaScript Enthusiast | </span>
+                    <span>Problem Solver</span>
+                </p>
+                <div>
+                    <ul class="coding-profiles-link">
+                        <li><a target="_blank" href="https://github.com/thanwin84"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/than-win-hline-80867621a/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="https://www.hackerrank.com/profile/thanwinhline84">Hackerrank</a></li>
+                        <li><a target="_blank" href="https://leetcode.com/u/thanwinhline84/">Leetcode</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero-profile col-2">
+                <img src="assets/hero-profile-photo02.JPG" alt="profile photo">
+            </div>
+        </section>
+        <section id="educations" class="section">
+            <h2 class="section-title">Educations</h2>
+            <div class="institute-container">
+                
+                <article class="institute">
+                    <div class="institute-header">
+                        <h3 class="institute-name gradient-text">Chang'an University, China</h3>
+                        <span>2023 - present</span>
+                    </div>
+                    <p class="institute-body ">Computer Science and Technology, MS</p>
+                </article>
+                <article class="institute">
+                    <div class="institute-header">
+                        <h3 class="institute-name gradient-text">Ningbo University of Technology, China</h3>
+                        <span>2017 - 2022</span>
+                    </div>
+                    <p class="institute-body ">Computer Science and Technology, MS</p>
+                </article>
+            </div>
+           
+        </section>
+        <section id="projects" class="section">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="project-container">
+                <article class="project-card">
+                    <div>
+                        <img src="assets/project-career-connect.png" alt="">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title gradient-text">Career Connect</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit maiores facere nihil necessitatibus ab?</p>
+                        <div class="link-container">
+                            <a href="https://career-connect-frontend-1kvx.onrender.com" class="link">Live Demo</a>
+                            <a href="https://github.com/thanwin84/career-connect" class="link">Github Repo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div>
+                        <img src="assets/project-pandaeats.png" alt="">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title gradient-text">PandaEats</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit maiores facere nihil necessitatibus ab?</p>
+                        <div class="link-container">
+                            <a target="_blank" href="https://mern-pandaeats-frontend.onrender.com" class="link">Live Demo</a>
+                            <a target="_blank" href="https://github.com/thanwin84/pandaeats-frontend" class="link">Github Repo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <form action="https://formspree.io/f/manybnkr" method="post" class="box-shadow">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea required name="message" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit">
+                    Send
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><small>&copy; 2024 Than Win Hline. All rights reserved.</small></p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

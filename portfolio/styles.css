@@ -1,0 +1,447 @@
+:root {
+    /* Slate colors */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+     /* Blue color scale */
+     --blue-50: #eff6ff;
+     --blue-100: #dbeafe;
+     --blue-200: #bfdbfe;
+     --blue-300: #93c5fd;
+     --blue-400: #60a5fa;
+     --blue-500: #3b82f6;
+     --blue-600: #2563eb;
+     --blue-700: #1d4ed8;
+     --blue-800: #1e40af;
+     --blue-900: #1e3a8a;
+     --ff-primary: "Roboto", serif;
+     --ff-secondary: "Arvo", serif;
+
+     --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
+    
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff-secondary);
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+  
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+body {
+    padding: 2rem 0.2rem;
+    background-color: var(--zinc-900);
+    width: 90%;
+    margin: 0 auto;
+  }
+
+ul {
+  list-style-type: none;
+}
+
+/* navigation */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0.6rem auto;
+    position: relative;
+}
+
+nav > ul {
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    border: 1px solid var(--gray-300);
+    padding: 1rem 1.6rem;
+    border-radius: 8px;
+    background-color: var(--zinc-800);
+    text-align: center;
+    display: none;
+}
+
+nav > ul > li {
+  margin-bottom: 1rem;
+  height: 100%;
+}
+.menu-btn {
+  align-self: center;
+  outline: none;
+  font-size: 1.3rem;
+  background-color: transparent;
+  color:var(--slate-100);
+  border: none;
+  cursor: pointer;
+  padding: .4rem;
+}
+.menu-btn:hover {
+  border: 2px solid var(--slate-100);
+  border-radius: 8px;
+}
+.mbl-nav {
+  position: absolute;
+  width: 100%;
+  top: 54px;
+  left: 0;
+}
+/*  */
+h1 {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-primary);
+}
+
+h1 span:first-child {
+    color: var(--slate-100);
+}
+
+h1 .title {
+    font-size: 0.8rem;
+    color: var(--slate-300);
+    margin-top: 0.4rem;
+    margin-left: 1.4rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+nav  li  a {
+    color: var(--slate-200)
+}
+
+nav a:active, nav a:hover {
+    color: var(--slate-300);
+}
+/* hero section */
+#about-me {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 3%;
+    margin: 3rem auto;
+}
+.col-1{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.col-2 {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  order: -1
+}
+
+.hero-profile img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--slate-600);
+  margin: 0 auto;
+  
+}
+#about-me h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+#about-me h2 span:first-child {
+  font-weight: 300;
+  color: var(--slate-100);
+  
+}
+#about-me h2 .myname {
+  color: linear-gradient(135deg, #66b2ff, #cce5ff,#3385ff);
+  font-size: 1.8rem;
+}
+.intro-tagline {
+  color: var(--slate-200)
+}
+#about-me ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  height: 10px;
+  
+}
+#about-me ul li > a {
+  color: var(--slate-200);
+  font-size: 1.1rem;
+}
+#about-me ul li > a:hover {
+  color: var(--blue-700);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+/* section style */
+.section {
+  width: 90%;
+  margin: 2.4rem auto;
+}
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--slate-200);
+  margin-bottom: 0.8rem;
+  
+}
+
+
+/* Education section */
+.institute-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.institute {
+ border: 1px solid var(--slate-300);
+ padding: 2rem 1rem;
+ border-radius: 8px;
+ 
+}
+.institute h3 {
+  font-size: 1.2rem;
+}
+.institute-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+.institute-header span {
+  font-size: 0.9rem;
+  margin: auto 0;
+  color: var(--slate-300);
+  text-wrap: nowrap;
+}
+.institute-body {
+  margin-left: 1rem;
+  color: var(--slate-200)
+}
+
+/* projects section */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+ 
+}
+.project-card {
+  border: 1px solid var(--slate-300);
+  padding: 0.8rem;
+  border-radius: 8px;
+  background-color: var(--zinc-800);
+}
+.project-card:hover {
+  /* background-color: var(--gray-200); */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.08);
+  transform: scale(1.05);
+}
+.project-card img {
+  border-radius: 8px;
+}
+.project-card-body {
+  margin: 1rem 0;
+  
+}
+.project-title {
+  margin-bottom: 0.5rem;
+  font-family: var(--ff-primary);
+}
+.project-description {
+  color: var(--slate-300)
+}
+.project-card .link-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem 0;
+}
+.project-card .link {
+  border: 1px solid var(--slate-300);
+  padding: 10px 15px;
+  text-wrap: nowrap;
+  color: var(--slate-200);
+  border-radius: 8px;
+}
+.project-card .link:hover {
+  background-color: var(--slate-100);
+  color: var(--slate-800);
+}
+/* contact section */
+form {
+  width: 100%;
+  background-color: var(--zinc-800);
+  border: 1px solid var(--slate-300);
+  padding: 2.4rem 2rem;
+  border-radius: 8px;
+  font-family: var(--ff-secondary);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.form-group input, textarea {
+  background-color: var(--zinc-900);
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: var(--slate-200)
+}
+.form-group label {
+  color: var(--slate-300);
+}
+.form-group input:focus, textarea:focus {
+  border: 2px solid var(--blue-600)
+}
+form button {
+  padding: 0.8rem 0;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: var(--slate-200);
+  color: var(--slate-800);
+
+}
+form button:hover {
+  background-color: var(--slate-100);
+  color: var(--slate-800);
+}
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--gray-200);
+
+}
+
+footer p {
+  color: var(--slate-400);
+}
+/* utility class */
+.box-shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+.bold {
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #1E90FF, #00BFFF, #87CEFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px){
+  #about-me h2 .myname {
+    color: linear-gradient(135deg, #cce5ff, #66b2ff, #3385ff);
+    font-size: 2.6rem;
+  }
+  .project-container {
+    flex-direction: row;
+  }
+  .hero-profile img {
+    width: 15.6rem;
+    height: 15.6rem;
+  }
+  #about-me {
+    flex-direction: row;
+  }
+  #about-me div:first-child{
+    order: -1
+  }
+  #about-me .title {
+    font-size: 2.4rem;
+  }
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* navigation */
+  .nav {
+    justify-content: space-evenly;
+  }
+  nav > ul {
+    border: none;
+   
+  }
+  nav > ul > li {
+    margin-bottom: 0;
+  }
+  .mbl-nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 0.8rem;
+    padding: 1rem;
+   
+  }
+  
+  .menu-btn {
+    display: none;
+  }
+  /* educations section */
+  .institute-container {
+    flex-direction: row;
+  }
+  .institute-container article {
+    flex: 1
+  }
+  .institute-header {
+    gap: 1rem;
+  }
+
+}
