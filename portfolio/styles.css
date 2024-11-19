@@ -175,13 +175,23 @@ nav a:active, nav a:hover {
 }
 
 .hero-profile img {
+
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
+  border-radius: 10px;
   object-fit: cover;
-  border: 4px solid var(--slate-600);
+  border: 4px solid var(--slate-300);
   margin: 0 auto;
-  
+  animation-name: transform-img;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+}
+@keyframes transform-img {
+  100% {
+    transform: rotate(5deg);
+  }
 }
 #about-me h2 {
   display: flex;
@@ -280,9 +290,10 @@ nav a:active, nav a:hover {
 
 /* projects section */
 .project-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
+  
  
 }
 .project-card {
@@ -295,7 +306,7 @@ nav a:active, nav a:hover {
 .project-card:hover {
   /* background-color: var(--gray-200); */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.08);
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 .project-card img {
   border-radius: 8px;
@@ -331,6 +342,7 @@ nav a:active, nav a:hover {
 /* contact section */
 form {
   width: 100%;
+  max-width: 500px;
   background-color: var(--zinc-800);
   border: 1px solid var(--slate-300);
   padding: 2.4rem 2rem;
@@ -375,17 +387,26 @@ form button:hover {
 }
 footer {
   width: 100%;
-  margin: 0 auto;
-  padding: 1rem 0;
   display: flex;
-  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
   justify-content: center;
-  border-top: 1px solid var(--gray-200);
-
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+footer ul a {
+  color: var(--slate-300);
+  font-size: 0.8rem;
 }
 
 footer p {
   color: var(--slate-400);
+  text-align: center;
 }
 /* utility class */
 .box-shadow {
@@ -412,8 +433,15 @@ footer p {
     font-size: 2.6rem;
   }
   .project-container {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+  /* .project-container article:last-child {
+    justify-self: center;
+    grid-column: 1/2;
+  } */
+  
+  
   .hero-profile img {
     width: 15.6rem;
     height: 15.6rem;
@@ -428,7 +456,7 @@ footer p {
     font-size: 2.4rem;
   }
   form {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
   }
   /* navigation */
@@ -465,5 +493,15 @@ footer p {
   .institute-header {
     gap: 1rem;
   }
-
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 } 
+@media (min-width: 1024px){
+  .project-container {
+    grid-template-columns: repeat(3, 1fr)
+  }
+  
+  
+}
